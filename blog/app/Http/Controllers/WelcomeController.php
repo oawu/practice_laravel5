@@ -30,7 +30,9 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		// $environment = $app->environment();
+
+		// return view('welcome');
 	}
 
 }
