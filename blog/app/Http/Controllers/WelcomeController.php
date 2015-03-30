@@ -31,7 +31,6 @@ class WelcomeController extends Controller {
 	public function index()
 	{
 		// $environment = $app->environment();
-
 		// return view('welcome');
 	}
 
