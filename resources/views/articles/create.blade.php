@@ -13,5 +13,5 @@
     {!! Form::label('content', '內容'); !!}
     {!! Form::textarea('content', null, ['placeholder="請輸入內容.."']); !!}
     <hr/>
-    {!! Form::submit('送出', array ('class="btn btn-default"')); !!}
+    {!! Form::submit('送出'); !!}
 {!! Form::close(); !!}
