@@ -14,6 +14,7 @@
             <th>細節</th>
             <th>編輯</th>
             <th>刪除</th>
+            <th>檢視留言</th>
         </tr>
     </thead>
     <tbody>
@@ -31,14 +32,17 @@
                     </td>
                     <td>
                         {!! Form::open(['method' => 'DELETE', 'route' => ['articles.destroy', $article]]) !!}
-                            c
+                            {!! Form::submit('刪除') !!}
                         {!! Form::close() !!}
+                    </td>
+                    <td>
+                        {!! link_to_route('articles.comments.index', '檢視留言', $article) !!}
                     </td>
                 </tr>
             @endforeach
         @else
             <tr>
-                <td colspan='5'>沒有資料！</td>
+                <td colspan='7'>沒有資料！</td>
             </tr>
         @endif
     </tbody>
