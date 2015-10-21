@@ -31,14 +31,14 @@
                     </td>
                     <td>
                         {!! Form::open(['method' => 'DELETE', 'route' => ['articles.destroy', $article]]) !!}
-                            c
+                            {!! Form::submit('刪除') !!}
                         {!! Form::close() !!}
                     </td>
                 </tr>
             @endforeach
         @else
             <tr>
-                <td colspan='5'>沒有資料！</td>
+                <td colspan='6'>沒有資料！</td>
             </tr>
         @endif
     </tbody>
